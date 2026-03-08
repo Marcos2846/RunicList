@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct RunicListApp: App {
@@ -13,5 +14,6 @@ struct RunicListApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: TaskItem.self)
     }
 }
